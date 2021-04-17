@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML forms</title>
+</head>
+<body>
+  <section id="overlay">
+    <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+    <hr>
+    <!--Extra contents to add
+    
+    <form action="/practice.html" method="POST">
+     <h1>Sweden's Testier Burgers</h1>
+     <p>Order now!</p>
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username">
+      <br>
+      <label for="user-pw">Password:</label>
+      
+      <input type="password" name="user-pw" id="user-pw">-->
+      
+        
+<!---input types
+      
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week"> -->
+    <!-- <form action="submission.html" method="POST"> -->
+      <form name='config' action="submission.html" method="get" enctype="application/x-www-form-urlencoded">
+      <h1>Create a burger!</h1>
+      <section class="protein">
+        <label for="patty">What type of protein would you like?</label>
+        <input type="text" name="patty" id="patty" value="chicken">
+      </section>
+      <hr>
+      <section class="patties">
+        <label for="amount">How many patties would you like?</label>
+        <!--Add your code below-->
+        <input type="number" id="amount" name="amount" step="1" >  
+      </section>
+      <hr>
+      
+      <section class="cooked">
+        <label for="doneness">How do you want your patty cooked</label>
+        <br>
+        <span>Rare</span>
+         <!--Add your code below-->
+          <input type="range" id="doneness" name="doneness" value="3"min="0" max="5" step="0.5">
+        
+        <span>Well-Done</span>
+      </section>
+      <hr>
+      
+      <section class="toppings">
+        <span>What toppings would you like?</span>
+        <br>
+        <!--Add your code below for the first checkbox-->
+        <input id="lettuce" type="checkbox" name="topping" value="lettuce">
+
+        <label for="lettuce">Lettuce</label>
+        <!--Add your code below for the second checkbox-->
+        <input id="tomato" type="checkbox" name="topping" value="tomato">
+        <label for="tomato">Tomato</label>
+        <!--Add your code below for the third checkbox-->
+         <input id="leaf" type="checkbox" name="topping" value="leaf">
+        <label for="leaf">Leaf</label>
+      </section>
+      <hr>
+
+      <section class="cheesy">
+        <span>Would you like to add cheese?</span>
+        <br>
+        <!--Add your first radio button below-->
+      <input type="radio" id="yes" name="cheese" value="yes" >
+        <label for="yes">Yes</label>
+        <!--Add your second radio button below-->
+           <input type="radio" id="no" name="cheese" value="no" >
+
+        <label for="no">No</label>
+      </section>
+      <hr>
+
+      <section class="bun-type">
+        <label for="bun">What type of bun would you like?</label>
+        <!--Add your code below-->
+        <select id="bun" name="bun">
+          <option value="sesame">Sesame</option>
+          <option value="potato">Potato</option>
+          <option value="wheat">Wheat</option>
+        </select> 
+      </section>
+      <hr>
+
+      <section class="sauce-selection">
+        <label for="sauce">What type of sauce would you like?</label>
+        <input list="sauces" id="sauce" name="sauce">
+        <!--Add your code below-->
+      <datalist id="sauces">
+        <option value="ketchup"></option>
+        <option value="mayo"></option>
+        <option value="garlic"></option>
+      </datalist>	  
+      </section>
+      
+      <hr>
+
+      <section class="extra-info">
+        <label for="extra">Anything else you want to add?</label>
+        <br>
+        <!--Add your code below-->
+        <textarea id="extra" name="extra" rows="3" cols="40">Type here!</textarea>
+        
+      </section>
+      <hr>
+
+      <section class="submission">
+        <!--Add your code below-->
+        <input type="submit" value="Submit">
+      </section>
+      
+    </form>
+    
+  </section>
+  
+</body>
+</html>
